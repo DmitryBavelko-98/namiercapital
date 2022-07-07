@@ -2063,6 +2063,8 @@ h6 {
 }
 
 .form__file {
+  position: relative;
+  max-height: 52px;
   background-color: #E7FEFE;
   border: 1px dashed #09B9B9;
   margin: 0 0 24px 0;
@@ -2076,7 +2078,12 @@ h6 {
 }
 
 .form__file input {
-  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  height: 100%;
+  cursor: pointer;
 }
 
 .form__file label {
