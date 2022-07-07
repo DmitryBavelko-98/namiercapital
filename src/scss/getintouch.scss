@@ -105,6 +105,8 @@
         }
     }
     &__file {
+        position: relative;
+        max-height: 52px;
         background-color: #E7FEFE;
         border: 1px dashed #09B9B9;
         margin: 0 0 24px 0;
@@ -115,7 +117,12 @@
             background-color: #d0f4f4;
         }
         input {
-            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            height: 100%;
+            cursor: pointer;
         }
         label {
             cursor: pointer;
