@@ -2,6 +2,7 @@
   "name": "gulp_2022",
   "version": "1.0.0",
   "description": "",
+  "homepage": "https://dmitrybavelko-98.github.io/namiercapital/portfolio.html",
   "main": "gulpfile.js",
   "type": "module",
   "scripts": {
