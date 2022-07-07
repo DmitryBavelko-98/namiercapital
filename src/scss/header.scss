@@ -1,0 +1,176 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 45px 0;
+    z-index: 1000;
+    @media (max-width: $md1 + px) {
+        padding: 27px 0;
+    }
+    &.active {
+        background-color: #023250;
+    }
+    &_contact {
+        position: relative;
+        background-color: #023250;
+    }
+    &__logo {
+        &.active {
+            margin: 0 0 50px 0;
+            @media (max-width: $md2 + px) {
+                margin: 0 0 45px 0;
+            }
+            @media (max-width: $md3 + px) {
+                margin: 0 0 40px 0;
+            }
+        }
+    }
+    &__content {
+        @media (max-width: $md1 + px) {
+            display: none;
+            &.active {
+                display: block;
+            }
+        }
+    }
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        @media (max-width: $md1 + px) {
+            flex-direction: column;
+            width: 100%;
+        }
+        & div, a {
+            @media (max-width: 1248px) {
+                margin: 0 7px;
+            }
+            @media (max-width: $md1 + px) {
+                margin: 0 0 30px 0;
+            }
+        }
+    }
+    &__link {
+        &.active {
+            display: block;
+        }
+    }
+    &__burger {
+        display: none;
+        text-align: right;
+        @media (max-width: $md1 + px) {
+            display: block;
+        }
+    }
+    &__burger-cross {
+        position: absolute;
+        right: 0;
+        display: grid;
+        width: 36px;
+        grid-template: repeat(3, 9px) / 1fr;
+        transition: transform .2s ease;
+        span {
+            align-self: center;
+            width: 100%;
+            height: 3px;
+            background-color: #fff;
+            align-self: center;
+        }
+        &::before, &::after {
+            align-self: center;
+            content: '';
+            width: 100%;
+            height: 2.5px;
+            background-color: #fff;
+        }
+        &.active {
+            transform: rotate(90deg);
+        }
+    }
+    &__inner {
+        width: 100%;
+    }
+    &__link {
+        color: #fff;
+        font-size: 1rem;
+        flex: 1 1 auto;
+        &:hover {
+            color: #09B9B9;
+        }
+        &:active {
+            color: #09B9B9;
+        }
+    }
+    &__social {
+        display: flex;
+        justify-content: flex-end;
+        @media (max-width: $md1 + px) {
+            display: none;
+        }
+    }
+    &__spoiler {
+        flex: 1 1 auto;
+        position: relative;
+        cursor: pointer;
+        &:hover .header__submenu {
+            visibility: visible;
+        }
+        &:hover {
+            .header__link_sub::before {
+                transform: rotate(-135deg);
+            }
+            @media (max-width: $md1 + px) {
+                margin-bottom: 165px;
+            }
+        }
+    }
+    &__link_sub {
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%) rotate(45deg);
+            right: -30%;
+            display: block;
+            width: 6px;
+            height: 6px;
+            border-bottom: 1.5px solid #fff;
+            border-right: 1.5px solid #fff;
+            transition: transform .1s ease;
+        }
+    }
+    &__submenu {
+        visibility: hidden;
+        position: absolute;
+        padding: 20px 0 20px 20px;
+        width: 170%;
+        margin: 0 0 0 -20px;
+        &_blue {
+            background-color: #023250;
+        }
+        @media (max-width: $md1 + px) {
+            padding: 20px 0 0 40px;
+        }
+    }
+    &__sublink {
+        margin: 0 0 10px 0;
+        &:last-child {
+            margin: 0;
+        }
+        a {
+            color: #fff;
+            &:hover {
+                color: #09B9B9;
+            }
+        }   
+        @media (max-width: $md1 + px) {
+            margin: 0 0 20px 0;
+        }    
+    }
+}
+
+.current-link {
+    color: #09B9B9;
+}

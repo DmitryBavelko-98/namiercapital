@@ -1,0 +1,79 @@
+@import 'fonts';
+
+$fontFamily: 'OpenSans';
+
+$minWidth: 375px;
+$maxWidth: 1440;
+$maxWidthContainer: 1248;
+$md1: 1199.98;
+$md2: 991.98;
+$md3: 767.98;
+$md4: 479.98;
+
+@import 'null';
+body {
+    color: #21243D;
+    &._lock {
+        overflow: hidden;
+    }
+}
+
+// Оболочка================================================
+.wrapper {
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex: 1 1 auto;
+}
+
+
+//Основная сетка================================================
+._container {
+	max-width: $maxWidthContainer + px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    @media (max-width: $maxWidthContainer+px) {
+        max-width: 930px;
+    }
+    @media (max-width: $md2+px) {
+        max-width: 750px;
+    }
+    @media (max-width: $md3+px) {
+        max-width: 510px;
+    }
+    @media (max-width: $md4+px) {
+        max-width: none;
+    }
+}
+
+._container_full {
+    @media (max-width: $md3+px) {
+        padding: 0;
+    }
+}
+
+@import 'bootstrap-grid';
+@import 'bootstrap-reboot';
+@import 'null';
+@import 'ui';
+@import 'intro';
+@import 'header';
+@import 'portfolio';
+@import 'litigation';
+@import 'getintouch';
+@import 'footer';
+
+@import 'team';
+
+@import 'contact';
+
+
+
+
+

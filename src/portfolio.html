@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+    @@include('html/head.html', {
+        "title": "Portfolio"
+    })
+    <body>
+        <div class="wrapper">
+            @@include('html/header.html', {}) 
+            <main class="main">
+                <section class="intro">
+                    <div class="_container">
+                        <div class="intro__location">
+                            <a class="intro__home" href="#">Home</a>
+                            <span class="intro__path">Portfolio</span>
+                        </div>
+                        <div class="row">
+                            <div class="intro__content col-xl-6 col-md-8 col-10">
+                                <h1 class="intro__title">Our Portfolio</h1>
+                                <div class="intro__text">At Namier Capital we are proud to work with these high-growth and innovative companies</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="portfolio">
+                    <div class="_container">
+                        <div class="row">
+                            <h2 class="portfolio__title title col-12">Portfolio</h2>
+                        </div>
+                        <div class="portfolio__nav">
+                            <div class="row">
+                                <div class="portfolio__filters col-xl-8 col-lg-10 col-12">
+                                    <div class="portfolio__filter">
+                                        <button class="portfolio__btn">Health Tech</button>
+                                        <span id="portfolio__cross"></span>
+                                    </div>
+                                    <div class="portfolio__filter">
+                                        <button class="portfolio__btn">Consumer Tech</button>
+                                        <span id="portfolio__cross"></span>
+                                    </div>
+                                    <div class="portfolio__filter">
+                                        <button class="portfolio__btn">Big Data</button>
+                                        <span id="portfolio__cross"></span>
+                                    </div>
+                                    <div class="portfolio__filter">
+                                        <button class="portfolio__btn">Sensors</button>
+                                        <span id="portfolio__cross"></span>
+                                    </div>
+                                    <div class="portfolio__filter">
+                                        <button class="portfolio__btn">Nutrition</button>
+                                        <span id="portfolio__cross"></span>
+                                    </div>
+                                    <div class="portfolio__filter">
+                                        <button class="portfolio__btn">SAAS</button>
+                                        <span id="portfolio__cross"></span>
+                                    </div>
+                                    <div class="portfolio__filter">
+                                        <button class="portfolio__btn">IoT</button>
+                                        <span id="portfolio__cross"></span>
+                                    </div>
+                                    <div class="portfolio__filter">
+                                        <button class="portfolio__btn">AI</button>
+                                        <span id="portfolio__cross"></span>
+                                    </div>                            
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row"> 
+                            <div class="portfolio__cards col-12">
+                                <div class="row no-gutters">
+                                    <div class="portfolio__card card col-12 col-md-6 col-lg-4">
+                                        <img src="./img/portfolio/cards/1.svg" alt="company" class="card__title">
+                                        <div class="card__img">
+                                            <img src="./img/portfolio/cards/1.jpg" alt="card">
+                                        </div>
+                                        <div class="card__content">
+                                            <div class="card__info">
+                                                <img class="card__subtitle" src="./img/portfolio/cards/1_small.svg" alt="">
+                                                <a href="#" class="card__link">imstarsa.com</a>
+                                            </div>
+                                            <div class="card__text">
+                                                IMSTAR developed a cell and tissuereader analyser that enables IVD tests to detect early stagecancer and then monitor the tumour cells throughout the treatment period.
+                                            </div>
+                                            <div class="card__tags">
+                                                <div class="card__tag">Health Tech</div>
+                                                <div class="card__tag">SAAS</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="portfolio__card card col-12 col-md-6 col-lg-4">
+                                        <img src="./img/portfolio/cards/2.svg" alt="company" class="card__title">
+                                        <div class="card__img">
+                                            <img src="./img/portfolio/cards/2.jpg" alt="card">
+                                        </div>
+                                        <div class="card__content">
+                                            <div class="card__info">
+                                                <img class="card__subtitle" src="./img/portfolio/cards/2_small.svg" alt="">
+                                                <a href="#" class="card__link">measureprotocol.com</a>
+                                            </div>
+                                            <div class="card__text">
+                                                Measureis creating a marketplace for person-based data where individualsare paid fairly and data usage is secure and transparent, the disruptive alternative to traditional market research.                                        </div>
+                                            <div class="card__tags">
+                                                <div class="card__tag">AI</div>
+                                                <div class="card__tag">Big Data</div>
+                                                <div class="card__tag">SAAS</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="portfolio__card card col-12 col-md-6 col-lg-4">
+                                        <img src="./img/portfolio/cards/3.svg" alt="company" class="card__title">
+                                        <div class="card__img">
+                                            <img src="./img/portfolio/cards/3.jpg" alt="card">
+                                        </div>
+                                        <div class="card__content">
+                                            <div class="card__info">
+                                                <img class="card__subtitle" src="./img/portfolio/cards/3_small.svg" alt="">
+                                                <a href="#" class="card__link">anbsensors.com</a>
+                                            </div>
+                                            <div class="card__text">
+                                                Industry disruptive cost effective, smart, self-calibrating, low maintenance pH sensor for use across all sensing platforms, including ocean monitoring and water resource management.
+                                            </div>
+                                            <div class="card__tags">
+                                                <div class="card__tag">Sensors</div>
+                                                <div class="card__tag">IoT</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="portfolio__card card col-12 col-md-6 col-lg-4">
+                                        <img src="./img/portfolio/cards/4.svg" alt="company" class="card__title">
+                                        <div class="card__img">
+                                            <img src="./img/portfolio/cards/4.jpg" alt="card__content">
+                                        </div>
+                                        <div class="card__content">
+                                            <div class="card__info">
+                                                <img class="card__subtitle" src="./img/portfolio/cards/4_small.svg" alt="">
+                                                <a href="#" class="card__link">tabletopgroup.com</a>
+                                            </div>
+                                            <div class="card__text">
+                                                Developing and deploying cutting-edge tablet devices that facilitate effortless digital ordering for hospitality and catering services.                                        </div>
+                                            <div class="card__tags">
+                                                <div class="card__tag">Consumer Tech</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="portfolio__card card col-12 col-md-6 col-lg-4">
+                                        <img src="./img/portfolio/cards/1.svg" alt="company" class="card__title">
+                                        <div class="card__img">
+                                            <img src="./img/portfolio/cards/5.jpg" alt="card">
+                                        </div>
+                                        <div class="card__content">
+                                            <div class="card__info">
+                                                <img class="card__subtitle" src="./img/portfolio/cards/1_small.svg" alt="">
+                                                <a href="#" class="card__link">imstarsa.com</a>
+                                            </div>
+                                            <div class="card__text">
+                                                IMSTAR developed a cell and tissuereader analyser that enables IVD tests to detect early stagecancer and then monitor the tumour cells throughout the treatment period.
+                                            </div>
+                                            <div class="card__tags">
+                                                <div class="card__tag">Health Tech</div>
+                                                <div class="card__tag">SAAS</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="portfolio__card card col-12 col-md-6 col-lg-4">
+                                        <img src="./img/portfolio/cards/6.svg" alt="company" class="card__title">
+                                        <div class="card__img">
+                                            <img src="./img/portfolio/cards/6.jpg" alt="card">
+                                        </div>
+                                        <div class="card__content">
+                                            <div class="card__info">
+                                                <img class="card__subtitle" src="./img/portfolio/cards/6_small.svg" alt="">
+                                                <a href="#" class="card__link">microshare.io</a>
+                                            </div>
+                                            <div class="card__text">
+                                                Microsharemakes it cost-effective and easy to deploy sensors at scale to monitor your desks, conference rooms, parking spots and more – for better control and improved safety.
+                                            </div>
+                                            <div class="card__tags">
+                                                <div class="card__tag">Sensors</div>
+                                                <div class="card__tag">IoT</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="portfolio__card card col-12 col-md-6 col-lg-4">
+                                        <img src="./img/portfolio/cards/7.svg" alt="company" class="card__title">
+                                        <div class="card__img">
+                                            <img src="./img/portfolio/cards/7.jpg" alt="card">
+                                        </div>
+                                        <div class="card__content">
+                                            <div class="card__info">
+                                                <img class="card__subtitle " src="./img/portfolio/cards/7_small.svg" alt="">
+                                                <a href="#" class="card__link">vemico.co.uk</a>
+                                            </div>
+                                            <div class="card__text">
+                                                Developing  a novel platform technology and class of molecular therapeutics derived from the human gut microbiome that positively impact the immune system and reduce the speed of aging.
+                                            </div>
+                                            <div class="card__tags">
+                                                <div class="card__tag">Nutrition</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="litigation">
+                    <div class="_container">
+                        <div class="row no-gutters">
+                            <h2 class="litigation__title title col-12">Litigation Finance</h2>
+                        </div>
+                        <div class="row no-gutters">
+                            <div class="litigation__text col-12 col-xl-8">
+                                <p>
+                                    Given the increasing importance of litigation financing as a risk management tool for both companies and law firms, we at Namier believe there is a clear opportunity to help funders access alternative sources of capital to fund their growth.
+                                </p>
+                                <p>
+                                    As a firm, we have developed an understanding of the litigation funding sector with a strong knowledge of the competitive landscape both in the UK and internationally.
+                                </p>
+                                <p>
+                                    We also have access to an extensive global network of investors who are active and have expressed an interest in the space.
+                                </p>
+                                <p>
+                                    Our network includes leading private equity firms, alternative funds, family offices and ultra-high net worth individuals who collectively have appetite for investment in both equity and debt instruments across the capital structure, including co-investment opportunities.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="getintouch">
+                    <div class="_container _container_full">
+                        <div class="row no-gutters">
+                            <div class="getintouch__content col-12">
+                                <div class="row no-gutters">
+                                    <div class="getintouch__info info col-12 col-md-6">
+                                        <div class="info__suptitle">Contact us</div>
+                                        <h2 class="info__title">Let's get in touch</h2>
+                                        <a  href="mailto:info@namiercapital.com" class="info__field info__field_mail">
+                                            <img src="./img/getintouch/mail.svg" alt="email">
+                                            <p>info@namiercapital.com</p>
+                                        </a>
+                                        <div class="info__field info__field_address">
+                                            <img class="info__icon" src="./img/getintouch/geo.svg" alt="">
+                                            <div class="info__text">167 Fleet Street, London, EC4A 2EA, United Kingdom</div>
+                                        </div>
+                                    </div>
+                                    <div class="getintouch__form form col-12 col-md-6">
+                                        <h2 class="form__subtitle">The contact form</h2>
+                                        <form class="form_container" action="#" method="post">
+                                            <input placeholder="Your name" name="name" type="text">
+                                            <input placeholder="Company name" name="company" type="text">
+                                            <input placeholder="Country" name="country" type="text">
+                                            <input placeholder="E-mail" name="email" type="email" reguired>
+                                            <textarea placeholder="Your message" name="message" reguired></textarea>
+                                            <div class="form__file">
+                                                <label for="file">Upload file</label>
+                                                <input type="file" name="file" id="file">
+                                            </div>
+                                            <button class="form__btn" type="submit">Send</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            @@include('html/footer.html', {})
+        </div>
+        <script src="js/app.min.js"></script>
+    </body>
+</html>

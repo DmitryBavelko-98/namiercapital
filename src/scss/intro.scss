@@ -1,0 +1,81 @@
+.intro {
+    position: relative;
+    top: 0;
+    padding: 210px 0 380px 0;
+    background: url(../img/portfolio/intro-bg.svg) center no-repeat;
+    background-size: cover;
+    height: auto;
+    @media (max-width: $md1+px) {
+        max-height: 704px;
+        padding: 120px 0 180px; 
+    }
+    &__location {
+        &_contact {
+            display: none;
+        }
+        margin: 0 0 100px 0;
+        @media (max-width: $md1+px) {
+            margin: 0 0 50px 0;
+        }
+    }
+    &__home {
+        position: relative;
+        color: rgba(255,255,255,.9);
+        margin: 0 25px 0 0;
+        &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%) rotate(45deg);
+            right: -18px;
+            width: 5px;
+            height: 5px;
+            border-top: 1px solid rgba(255,255,255,.7);
+            border-right: 1px solid rgba(255,255,255,.7);
+        }
+        &:hover {
+            color: rgba(255,255,255,.7);
+            &::after {
+                border-top: 1px solid rgba(255,255,255,.5);
+                border-right: 1px solid rgba(255,255,255,.5);
+            }
+        }
+    }
+    &__path {
+        color: rgba(255,255,255,.6);
+    }
+    &_team {
+        background: url(../img/team/team-bg.svg) center no-repeat;
+        background-size: cover;
+        padding: 210px 0 200px 0;
+        @media (max-width: $md1+px) {
+            padding: 120px 0 180px; 
+        }
+    }
+    &__content {
+        color: #fff;
+    }
+    &__title {
+        font-family: 'IBMPlexSans';
+        font-weight: 600;
+        font-size: 5.5rem;
+        line-height: 105%;
+        margin: 0 0 36px 0;
+        @media (max-width: $md1+px) {
+            font-size: 3.5rem;
+        }
+        @media (max-width: $md3+px) {
+            font-size: 2.75rem;
+        }
+    }
+    &__text {
+        opacity: 0.6;
+        font-size: 1.5rem;
+        @media (max-width: $md1+px) {
+            font-size: 1rem;
+        }
+        &_team {
+            font-size: 1rem;
+        }
+    }
+}
