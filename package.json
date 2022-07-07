@@ -9,13 +9,15 @@
     "build": "gulp build --build",
     "svgSprive": "gulp svgSprive",
     "zip": "gulp deployZIP --build",
-    "deploy": "gulp deployFTP --build"
+    "deploy": "gulp deployFTP --build",
+    "pages": "gh-pages -d dist"
   },
   "author": "Dmitry",
   "license": "ISC",
   "devDependencies": {
     "del": "^6.0.0",
     "fs": "0.0.1-security",
+    "gh-pages": "^4.0.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-clean-css": "^4.3.0",
