@@ -1,7 +1,8 @@
 export function handleFilters() {
-    const filters = document.querySelectorAll('.portfolio__btn');
-    const crosses = document.querySelectorAll('#portfolio__cross');
-    const cards = document.querySelectorAll('.card');
+    const btns = document.querySelectorAll('.portfolio__btn'),
+         crosses = document.querySelectorAll('.portfolio__cross'),
+         cards = document.querySelectorAll('.card'),
+         filters = document.querySelector('.portfolio__filters');
 
     function renderCards (filter) {
         cards.forEach(card => {
@@ -15,7 +16,7 @@ export function handleFilters() {
     }
 
     function hideFilters () {
-        filters.forEach(filter => {
+        btns.forEach(filter => {
             filter.classList.add('non-active');
             filter.setAttribute('disabled', 'disabled')
         })
@@ -29,7 +30,7 @@ export function handleFilters() {
     }
 
     function removeFilters() {
-        filters.forEach(filter => {
+        btns.forEach(filter => {
             filter.removeAttribute('disabled');
             filter.classList.remove('non-active');
             filter.classList.remove('active');
@@ -40,21 +41,17 @@ export function handleFilters() {
         });
     }
 
-    filters.forEach(filter => {
-        filter.addEventListener('click', (e) => {
+    filters.addEventListener('click', (e) => {
+        if (e.target.classList.contains('portfolio__btn')) {
             const target = e.target;
             renderCards(target)
             hideFilters();
             showFilter(target);
-        });
-    })
-
-    crosses.forEach(cross => {
-        cross.addEventListener('click', () => {
+        }
+        if (e.target.classList.contains('portfolio__cross')) {
             removeFilters();
-        })  
-    })
-
+        }
+    });
 }
 
 
