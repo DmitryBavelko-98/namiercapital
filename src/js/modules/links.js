@@ -1,4 +1,4 @@
-export function changeLinks() {
+export default function changeLinks() {
     const links = document.querySelectorAll('.nav-link');
     const path = document.querySelector('.intro__path');
 

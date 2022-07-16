@@ -1,4 +1,4 @@
-export function isWebp() {
+export default function isWebp() {
     function testWebP(callback) {
         let webP = new Image();
         webP.onload = webP.onerror = function () {
