@@ -8,5 +8,3 @@ isWebp();
 handleFilters();
 changeLinks();
 changeHeaderColor();
-
-

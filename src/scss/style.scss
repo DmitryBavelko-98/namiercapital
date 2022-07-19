@@ -12,50 +12,49 @@ $md4: 479.98;
 
 @import 'null';
 body {
-    color: #21243D;
-    &._lock {
-        overflow: hidden;
-    }
+  color: #21243d;
+  &._lock {
+    overflow: hidden;
+  }
 }
 
 // Оболочка================================================
 .wrapper {
-    width: 100%;
-    min-height: 100%;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 .main {
-    flex: 1 1 auto;
+  flex: 1 1 auto;
 }
-
 
 //Основная сетка================================================
 ._container {
-	max-width: $maxWidthContainer + px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 15px;
-    @media (max-width: $maxWidthContainer+px) {
-        max-width: 930px;
-    }
-    @media (max-width: $md2+px) {
-        max-width: 750px;
-    }
-    @media (max-width: $md3+px) {
-        max-width: 510px;
-    }
-    @media (max-width: $md4+px) {
-        max-width: none;
-    }
+  max-width: $maxWidthContainer + px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  @media (max-width: $maxWidthContainer+px) {
+    max-width: 930px;
+  }
+  @media (max-width: $md2+px) {
+    max-width: 750px;
+  }
+  @media (max-width: $md3+px) {
+    max-width: 510px;
+  }
+  @media (max-width: $md4+px) {
+    max-width: none;
+  }
 }
 
 ._container_full {
-    @media (max-width: $md3+px) {
-        padding: 0;
-    }
+  @media (max-width: $md3+px) {
+    padding: 0;
+  }
 }
 
 @import 'bootstrap-grid';
@@ -72,8 +71,3 @@ body {
 @import 'team';
 
 @import 'contact';
-
-
-
-
-
